@@ -17,7 +17,7 @@ var Paths = {
   HERE                 : './',
   DIST                 : 'dist',
   IMG                  : 'dist/img/',
-  // SVG                  : 'dist/svg/',
+  SVG                  : 'dist/svg/',
   DIST_TOOLKIT_JS      : 'dist/toolkit.js',
   LESS_TOOLKIT_SOURCES : './less/toolkit*',
   LESS                 : './less/**/**',
@@ -40,9 +40,11 @@ var Paths = {
 
 gulp.task('default', ['less-min', 'js-min'])
 
-gulp.task('watch', function () {
+gulp.task('watch', ['stage'], function () {
   gulp.watch(Paths.LESS, ['less-min']);
   gulp.watch(Paths.JS,   ['js-min']);
+  // gulp.watch(Paths.IMG,   ['img-cmp']);
+  // gulp.watch(Paths.SVG,   ['svg-cmp']);
 })
 
 gulp.task('docs', ['server'], function () {
@@ -100,12 +102,18 @@ gulp.task('js-min', ['js'], function () {
 /////////////////////////////////////////////
 // Before Deployment to Production (and possibly staging)
 
-gulp.task('pro', ['img-cmp', 'html-repath'])
+gulp.task('init', ['img-cmp', 'svg-cmp', 'html-repath'])
 
-// Relocates images
+// Relocates IMGs
 gulp.task('img-cmp', function () {
   return gulp.src('docs/assets/img/*')
     .pipe(gulp.dest(Paths.IMG))
+})
+
+// Relocates SVGs
+gulp.task('svg-cmp', function () {
+  return gulp.src('docs/assets/svg/*')
+    .pipe(gulp.dest(Paths.SVG))
 })
 
 // This replaces the file paths
@@ -118,6 +126,21 @@ gulp.task('html-repath', function() {
     }))
     .pipe(gulp.dest(Paths.HERE));
 })
+
+gulp.task('stage', ['img-cmp', 'svg-cmp'])
+
+// Relocates IMGs
+gulp.task('img-cmp', function () {
+  return gulp.src('docs/assets/img/*')
+    .pipe(gulp.dest(Paths.IMG))
+})
+
+// Relocates SVGs
+gulp.task('svg-cmp', function () {
+  return gulp.src('docs/assets/svg/*')
+    .pipe(gulp.dest(Paths.SVG))
+})
+
 // This relocates the index
 // gulp.task('html-dist', function () {
 //   return gulp.src('docs/minimal/*')
