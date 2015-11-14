@@ -66,6 +66,14 @@ output {
     margin: auto;
   }
 }
+#hero .hero-hr {
+  width: 25%;
+}
+@media (min-width: 768px) {
+  #hero .hero-hr {
+    width: 50%;
+  }
+}
 #hero h1,
 #hero h4 {
   text-align: center !important;
