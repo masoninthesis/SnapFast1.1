@@ -32,6 +32,104 @@ output {
   background-position: top center;
   background-size: cover;
 }
+.happily-married {
+  height: 420px;
+  margin: 0 0 80px 28px;
+}
+.navbar-brand {
+  float: none !important;
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    float: left;
+  }
+}
+.logo-header {
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .logo-header {
+    margin: none;
+    text-align: left;
+  }
+}
+#hero form {
+  width: 72%;
+  text-align: center;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  #hero form {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+}
+#hero h1,
+#hero h4 {
+  text-align: center !important;
+}
+@media (min-width: 768px) {
+  #hero h1,
+  #hero h4 {
+    text-align: left !important;
+  }
+}
+#hero div,
+#hero .btn-caption {
+  text-align: center !important;
+}
+@media (min-width: 768px) {
+  #hero div,
+  #hero .btn-caption {
+    text-align: left !important;
+  }
+}
+.pricing-box {
+  padding: 42px !important;
+}
+@media (min-width: 768px) {
+  .pricing-box {
+    padding: 20px !important;
+  }
+}
+.list-features {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .list-features {
+    text-align: left;
+  }
+}
+.price-head-row {
+  margin: 60px auto 0;
+}
+@media (min-width: 768px) {
+  .price-head-row {
+    margin: 60px auto;
+  }
+}
+.pricing-head {
+  width: 72%;
+  text-align: center;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .pricing-head {
+    width: inherit;
+    text-align: inherit;
+    margin: inherit;
+  }
+}
+.narrow {
+  margin: 20px 20px 40px 20px;
+}
+@media (min-width: 768px) {
+  .narrow {
+    margin: 80px 80px 40px 80px;
+  }
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
