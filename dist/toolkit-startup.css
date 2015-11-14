@@ -1,3 +1,37 @@
+.fw-300 {
+  font-weight: 300;
+}
+.hero-img {
+  padding: 4em 0 0 4em;
+}
+.form-control,
+output {
+  font-size: 18px !important;
+}
+.form-control {
+  border-radius: 2px !important;
+}
+.hero-btn {
+  width: 100%;
+  border-radius: 2px !important;
+}
+.app-price-plans {
+  background: #f4f5f6;
+}
+.brand-primary {
+  color: #2595FF;
+}
+.navbar-right {
+  margin-top: 0px !important;
+}
+.browser-content {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../docs/assets/img/load-speed.gif");
+  background-position: top center;
+  background-size: cover;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -2350,26 +2384,26 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #28cb75;
+  border-color: #24b669;
 }
 .btn-success:focus,
 .btn-success.focus {
   color: #fff;
-  background-color: #449d44;
-  border-color: #255625;
+  background-color: #20a05c;
+  border-color: #0f4b2b;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: #20a05c;
+  border-color: #1a834b;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
+  background-color: #20a05c;
+  border-color: #1a834b;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -2381,8 +2415,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active.focus,
 .open > .dropdown-toggle.btn-success.focus {
   color: #fff;
-  background-color: #398439;
-  border-color: #255625;
+  background-color: #1a834b;
+  border-color: #0f4b2b;
 }
 .btn-success:active,
 .btn-success.active,
@@ -2407,11 +2441,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #28cb75;
+  border-color: #24b669;
 }
 .btn-success .badge {
-  color: #5cb85c;
+  color: #28cb75;
   background-color: #fff;
 }
 .btn-info {
@@ -4077,11 +4111,11 @@ a.label:focus {
   background-color: #007cf1;
 }
 .label-success {
-  background-color: #5cb85c;
+  background-color: #28cb75;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #449d44;
+  background-color: #20a05c;
 }
 .label-info {
   background-color: #5bc0de;
@@ -4340,7 +4374,7 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
-  background-color: #5cb85c;
+  background-color: #28cb75;
 }
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -7740,9 +7774,9 @@ fieldset[disabled] .btn-primary-outline.active {
   background-color: #0b89ff;
 }
 .btn-success-outline {
-  color: #4cae4c;
+  color: #24b669;
   background-color: transparent;
-  border-color: #4cae4c;
+  border-color: #24b669;
 }
 .btn-success-outline:focus,
 .btn-success-outline.focus,
@@ -7751,7 +7785,7 @@ fieldset[disabled] .btn-primary-outline.active {
 .btn-success-outline.active,
 .open > .dropdown-toggle.btn-success-outline {
   color: #fff;
-  background-color: #4cae4c;
+  background-color: #24b669;
   box-shadow: none;
 }
 .btn-success-outline.disabled,
@@ -7772,11 +7806,11 @@ fieldset[disabled] .btn-success-outline:active,
 .btn-success-outline.disabled.active,
 .btn-success-outline[disabled].active,
 fieldset[disabled] .btn-success-outline.active {
-  border-color: #4cae4c;
+  border-color: #24b669;
 }
 .btn-success-outline .badge {
   color: #fff;
-  background-color: #4cae4c;
+  background-color: #24b669;
 }
 .btn-info-outline {
   color: #46b8da;
@@ -8680,7 +8714,7 @@ img.zoom-img {
   background-color: #2595FF;
 }
 .text-ribbon-success {
-  background-color: #5cb85c;
+  background-color: #28cb75;
 }
 .text-ribbon-warning {
   background-color: #f0ad4e;
@@ -8726,7 +8760,7 @@ img.zoom-img {
   background-color: #2595FF;
 }
 .panel-bold.panel-success {
-  background-color: #5cb85c;
+  background-color: #28cb75;
 }
 .panel-bold.panel-info {
   background-color: #5bc0de;
@@ -8759,7 +8793,7 @@ img.zoom-img {
   vertical-align: middle;
 }
 .delta-positive {
-  color: #5cb85c;
+  color: #28cb75;
 }
 .delta-positive:after {
   display: inline-block;
@@ -8837,7 +8871,7 @@ img.zoom-img {
   background-color: #2595FF;
 }
 .statcard-success {
-  background-color: #5cb85c;
+  background-color: #28cb75;
 }
 .statcard-info {
   background-color: #5bc0de;
