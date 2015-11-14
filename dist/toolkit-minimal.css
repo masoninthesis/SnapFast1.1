@@ -127,7 +127,7 @@ output {
 }
 @media (min-width: 768px) {
   .narrow {
-    margin: 80px 80px 40px 80px;
+    margin: 26px 80px 40px 80px;
   }
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
