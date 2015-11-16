@@ -1,3 +1,6 @@
+.text-muted-sm {
+  color: #444;
+}
 .fw-300 {
   font-weight: 300;
 }
@@ -50,8 +53,43 @@ output {
 }
 @media (min-width: 768px) {
   .logo-header {
-    margin: none;
+    margin: 0;
     text-align: left;
+  }
+}
+.phone-icon {
+  margin-top: -12px;
+}
+div > .nav-caption {
+  display: none;
+}
+@media (min-width: 768px) {
+  div > .nav-caption {
+    float: right !important;
+    display: inherit;
+  }
+}
+#hero .blaze {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+#hero h1 {
+  text-align: center !important;
+}
+@media (min-width: 768px) {
+  #hero h1 {
+    text-align: left !important;
+    font-size: 48px;
+  }
+}
+#hero h3,
+#hero p {
+  text-align: center !important;
+}
+@media (min-width: 768px) {
+  #hero h3,
+  #hero p {
+    text-align: left !important;
   }
 }
 #hero form {
@@ -66,32 +104,51 @@ output {
     margin: auto;
   }
 }
-#hero .hero-hr {
-  width: 25%;
+#hero form .form-control {
+  padding: 24px;
 }
-@media (min-width: 768px) {
-  #hero .hero-hr {
-    width: 50%;
-  }
-}
-#hero h1,
-#hero h4 {
+#hero div > .btn-caption {
   text-align: center !important;
 }
 @media (min-width: 768px) {
-  #hero h1,
-  #hero h4 {
+  #hero div > .btn-caption {
     text-align: left !important;
   }
 }
-#hero div,
-#hero .btn-caption {
-  text-align: center !important;
+#hero #table {
+  width: 100%;
+  height: 100%;
+  display: table;
+  margin-top: 10px;
 }
 @media (min-width: 768px) {
-  #hero div,
-  #hero .btn-caption {
-    text-align: left !important;
+  #hero #table {
+    height: 453px;
+  }
+}
+@media (min-width: 992px) {
+  #hero #table {
+    height: 453px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #table {
+    height: 340px;
+    margin-top: 38px;
+  }
+}
+#hero #table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#hero .speed-gfx {
+  padding: 0 38px 30px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #hero .speed-gfx {
+    padding: 0;
   }
 }
 .pricing-box {
@@ -128,6 +185,14 @@ output {
     width: inherit;
     text-align: inherit;
     margin: inherit;
+  }
+}
+.price-img {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .price-img {
+    width: 100%;
   }
 }
 .narrow {
@@ -2556,26 +2621,26 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #fff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #48f0de;
+  border-color: #30eeda;
 }
 .btn-info:focus,
 .btn-info.focus {
   color: #fff;
-  background-color: #31b0d5;
-  border-color: #1b6d85;
+  background-color: #19ecd6;
+  border-color: #0c9384;
 }
 .btn-info:hover {
   color: #fff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+  background-color: #19ecd6;
+  border-color: #11d0bc;
 }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #fff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+  background-color: #19ecd6;
+  border-color: #11d0bc;
 }
 .btn-info:active:hover,
 .btn-info.active:hover,
@@ -2587,8 +2652,8 @@ fieldset[disabled] .btn-success.active {
 .btn-info.active.focus,
 .open > .dropdown-toggle.btn-info.focus {
   color: #fff;
-  background-color: #269abc;
-  border-color: #1b6d85;
+  background-color: #11d0bc;
+  border-color: #0c9384;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2613,11 +2678,11 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #48f0de;
+  border-color: #30eeda;
 }
 .btn-info .badge {
-  color: #5bc0de;
+  color: #48f0de;
   background-color: #fff;
 }
 .btn-warning {
@@ -4224,11 +4289,11 @@ a.label:focus {
   background-color: #20a05c;
 }
 .label-info {
-  background-color: #5bc0de;
+  background-color: #48f0de;
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #31b0d5;
+  background-color: #19ecd6;
 }
 .label-warning {
   background-color: #f0ad4e;
@@ -4487,7 +4552,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-info {
-  background-color: #5bc0de;
+  background-color: #48f0de;
 }
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -7919,9 +7984,9 @@ fieldset[disabled] .btn-success-outline.active {
   background-color: #24b669;
 }
 .btn-info-outline {
-  color: #46b8da;
+  color: #30eeda;
   background-color: transparent;
-  border-color: #46b8da;
+  border-color: #30eeda;
 }
 .btn-info-outline:focus,
 .btn-info-outline.focus,
@@ -7930,7 +7995,7 @@ fieldset[disabled] .btn-success-outline.active {
 .btn-info-outline.active,
 .open > .dropdown-toggle.btn-info-outline {
   color: #fff;
-  background-color: #46b8da;
+  background-color: #30eeda;
   box-shadow: none;
 }
 .btn-info-outline.disabled,
@@ -7951,11 +8016,11 @@ fieldset[disabled] .btn-info-outline:active,
 .btn-info-outline.disabled.active,
 .btn-info-outline[disabled].active,
 fieldset[disabled] .btn-info-outline.active {
-  border-color: #46b8da;
+  border-color: #30eeda;
 }
 .btn-info-outline .badge {
   color: #fff;
-  background-color: #46b8da;
+  background-color: #30eeda;
 }
 .btn-warning-outline {
   color: #eea236;
@@ -8829,7 +8894,7 @@ img.zoom-img {
   background-color: #FF3167;
 }
 .text-ribbon-info {
-  background-color: #5bc0de;
+  background-color: #48f0de;
 }
 .iconlist {
   list-style: none;
@@ -8869,7 +8934,7 @@ img.zoom-img {
   background-color: #28cb75;
 }
 .panel-bold.panel-info {
-  background-color: #5bc0de;
+  background-color: #48f0de;
 }
 .panel-bold.panel-warning {
   background-color: #f0ad4e;
@@ -8980,7 +9045,7 @@ img.zoom-img {
   background-color: #28cb75;
 }
 .statcard-info {
-  background-color: #5bc0de;
+  background-color: #48f0de;
 }
 .statcard-warning {
   background-color: #f0ad4e;

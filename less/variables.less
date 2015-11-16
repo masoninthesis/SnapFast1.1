@@ -1,5 +1,12 @@
 @import "./bootstrap/variables.less";
 
+// Library
+
+.text-muted-sm {
+  color: #444;
+}
+
+
 // SnapFast1.0 Custom Less
 
 .fw-300 {
@@ -55,21 +62,57 @@
 // Media Queries
 // Mobile Only
 // Hero
-  .navbar-brand {
-    float: none !important;
-    @media (min-width: @screen-sm-min) {
-      float: left;
-  }}
-
-  .logo-header {
-  margin: auto;
-  text-align: center;
+.navbar-brand {
+  float: none !important;
   @media (min-width: @screen-sm-min) {
-    margin: none;
-  text-align: left;
-  }}
+    float: left;
+}}
+
+.logo-header {
+margin: auto;
+text-align: center;
+@media (min-width: @screen-sm-min) {
+  margin: 0;
+text-align: left;
+  }
+}
+
+.phone-icon {
+  margin-top: -12px;
+}
+
+div>
+.nav-caption {
+  display: none;
+  @media (min-width: @screen-sm-min) {
+    float: right !important;
+    display: inherit;
+  }
+}
 
 #hero {
+
+  .blaze {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  h1 {
+    text-align: center !important;
+    @media (min-width: @screen-sm-min) {
+      text-align: left !important;
+      font-size: 48px;
+    }
+  }
+
+  h3,
+  p {
+    text-align: center !important;
+    @media (min-width: @screen-sm-min) {
+      text-align: left !important;
+    }
+  }
+
   form {
     width: 72%;
     text-align: center;
@@ -79,31 +122,51 @@
       text-align: center;
       margin: auto;
     }
-  }
-
-  .hero-hr {
-    width: 25%;
-    @media (min-width: @screen-sm-min) {
-      width: 50%;
+    .form-control {
+      padding: 24px;
     }
   }
 
-  h1,
-  h4 {
-    text-align: center !important;
-    @media (min-width: @screen-sm-min) {
-      text-align: left !important;
-  }}
-
-
-
-  div,
+  div>
   .btn-caption {
     text-align: center !important;
     @media (min-width: @screen-sm-min) {
       text-align: left !important;
-  }}
+    }
+  }
+
+  #table {
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin-top: 10px;
+    @media (min-width: @screen-sm-min) {
+    height: 453px;
+    }
+    @media (min-width: @screen-md-min) {
+    height: 453px;
+    }
+    @media (min-width: @screen-lg-min) {
+    height: 340px;
+    margin-top: 38px;
+    }
+  }
+
+  #table-cell {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+  }
+
+  .speed-gfx {
+    padding: 0 38px 30px;
+    width: 100%;
+    @media (min-width: @screen-sm-min) {
+      padding: 0;
+    }
+  }
 }
+
 
 
 
@@ -112,13 +175,15 @@
   padding: 42px !important;
   @media (min-width: @screen-sm-min) {
     padding: 20px !important;
-}}
+  }
+}
 
 .list-features {
   text-align: center;
   @media (min-width: @screen-sm-min) {
     text-align: left;
-}}
+  }
+}
 
 .price-head-row {
   margin: 60px auto 0;
@@ -135,6 +200,12 @@
     width: inherit;
     text-align: inherit;
     margin: inherit;
+  }
+}
+.price-img {
+  width: 50%;
+  @media (min-width: @screen-sm-min) {
+    width: 100%;
   }
 }
 
@@ -179,7 +250,7 @@
 // Brand Colors
 @brand-primary: #288feb;
 @brand-success: #28cb75;
-@brand-info:    #5bc0de;
+@brand-info:    #48f0de; // turquoise
 @brand-warning: #f0ad4e;
 @brand-danger:  #FF3167;
 
