@@ -67,12 +67,15 @@
         <img class="speed-gfx visible-xs" alt="faster load times than the competition" src="./docs/assets/svg/gfx-hero1.2.svg">
         <h3 class="m-b-sm text-muted-sm">Try a free preview and <strong>rank among the fastest 7% of Magento stores</strong>.</h3>
         <p class="text-uppercase text-muted">In 3 Days</p>
-        <form action="">
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted) {window.location='http://jackalopemedia.com';}"></iframe>
+          <form action="https://docs.google.com/forms/d/1vdv02Vs2DDHNXClN-hozTICHR28UA_Fnn36jXpFzp7I/formResponse" method="post" id="ss-form" target="hidden_iframe"
+    onsubmit="submitted=true;">
           <fieldset class="form-group">
-            <label for="exampleInputEmail1"><!--Email address--></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Phone or Email">
+            <input type="text" name="entry.1510303287" class="form-control ss-q-short" id="entry_1510303287" dir="auto" placeholder="Phone or Email">
           </fieldset>
-          <button type="button" class="btn btn-lg btn-success hero-btn">Free Preview</button>
+          <button type="button" name="submit" id="ss-submit" class="btn btn-lg btn-success hero-btn jfk-button jfk-button-action">Free Preview</button>
           <div class="p-t"><small class="text-muted btn-caption">Can't wait? Call <span class="brand-primary">888-495-2089</span> (8am - 5pm MDT)</small></div>
         </form>
       </div>
@@ -250,7 +253,7 @@
       </div>
 
       <div class="">
-        <button class="btn btn-lg btn-primary w-md m-t-md m-b-lg">Start an account</button>
+        <button data-target="#submodal" data-toggle="modal" class="btn btn-lg btn-primary w-md m-t-md m-b-lg">Start an account</button>
       </div>
 
       <div class="row">
@@ -278,6 +281,32 @@
     </div>
   </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="submodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://jackalopemedia.com';}"></iframe>
+        <form action="https://docs.google.com/forms/d/1vdv02Vs2DDHNXClN-hozTICHR28UA_Fnn36jXpFzp7I/formResponse" method="post" id="ss-form" target="hidden_iframe"
+  onsubmit="submitted=true;">
+        <fieldset class="form-group">
+          <input type="text" name="entry.1510303287" class="form-control ss-q-short" id="entry_1510303287" dir="auto" placeholder="Phone or Email">
+        </fieldset>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" name="submit" id="ss-submit" class="btn btn-lg btn-success hero-btn jfk-button jfk-button-action">Free Preview</button>
+        <div class="p-t"><small class="text-muted btn-caption">Can't wait? Call <span class="brand-primary">888-495-2089</span> (8am - 5pm MDT)</small></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- For some reason jquery should be in the script below, but it's not -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <!-- For some reason jquery should be in the script below, but it's not -->
     <script src="dist/toolkit.min.js"></script>
   </body>
 </html>
