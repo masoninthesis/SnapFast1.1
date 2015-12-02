@@ -19,19 +19,39 @@
       <link rel="stylesheet" href="dist/toolkit-minimal.min.css">
 
 
-<!-- Crazyegg -->
-<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0042/9293.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
-<!-- Crazyegg -->
+      <!-- Crazyegg -->
+      <script type="text/javascript">
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName("script")[0];
+      a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0042/9293.js?"+Math.floor(new Date().getTime()/3600000);
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      </script>
+      <!-- Crazyegg -->
+
+      <!-- Call Tracking -->
+      <script type="text/javascript">
+      (function(a,e,c,f,g,b,d){var h={ak:"955717633",cl:"2HQXCKST72EQgbDcxwM"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[f]||(a[f]=h.ak);b=e.createElement(g);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(g)[0];d.parentNode.insertBefore(b,d);a._googWcmGet=function(b,d,e){a[c](2,b,h,d,null,new Date,e)}})(window,document,"_googWcmImpl","_googWcmAk","script");
+      </script>
+
+      <script type="text/javascript">
+        var callback = function(formatted_number, mobile_number) {
+          // formatted_number: number to display, in the same format as
+          //        the number passed to _googWcmGet().
+          //        (in this case, '1-800-123-4567')
+          // mobile_number: number formatted for use in a clickable link
+          //        with tel:-URI (in this case, '+18001234567')
+          var e = document.getElementById('number');
+          e.innerHTML = "";
+          e.appendChild(document.createTextNode('1-800-123-4567'));
+        };
+      </script>
+
+      <!-- /Call Tracking -->
 
   </head>
 
 
-<body>
+<body onload="_googWcmGet('number', '1-800-123-4567')">
 
   <!-- Google Tag Manager -->
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T9KCRX"
@@ -62,7 +82,7 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
           <li >
             <ul class="list-inline">
               <li><img class="phone-icon" src="./docs/assets/svg/phone-icon.svg" height="28"></li>
-              <li><h3 class="m-t-md text-muted"><span class="m-r-sm icon brand-primary"></span> 888-495-2089</h3></li>
+              <li><h3 class="m-t-md text-muted"><span class="m-r-sm icon brand-primary"></span><span id="number"> 888-495-2089</span></h3></li>
             </ul>
             <div><small class="text-muted nav-caption">(8am - 5pm MDT)</small></div>
           </li>
