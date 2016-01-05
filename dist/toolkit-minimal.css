@@ -215,23 +215,47 @@ a {
   transition: 0.5s;
 }
 a:hover {
-  color: #3dc7cc !important;
-  text-decoration: none!important;
-}
-.primary-color {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.primary-color:hover {
   color: #48f0de !important;
   text-decoration: none!important;
 }
-.secondary-color {
+.hero-btn {
+  color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.secondary-color:hover {
-  color: #3dc7cc !important;
+.hero-btn:hover {
+  color: #fff!important;
+  text-decoration: none!important;
+}
+.footer-btn {
+  background-color: #288feb !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-btn:hover {
+  background-color: #2884d6 !important;
+}
+.primary {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.primary:hover {
+  color: #48f0de !important;
+  text-decoration: none!important;
+}
+.primary-btn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.primary-btn:hover {
+  background-color: #2884d6 !important;
+}
+.secondary {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.secondary:hover {
+  color: #fff!important;
   text-decoration: none!important;
 }
 .primary-background {

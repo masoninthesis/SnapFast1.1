@@ -27,28 +27,49 @@
 // Un-comment to use css transitions when hovering on colors
 a {
   color: @brand-primary;
-  .secondary-color();
+  .primary();
 }
-.primary-color {
+
+.hero-btn {
+  color: #fff;
+  .secondary();
+}
+
+.footer-btn {
+  background-color: @brand-primary!important;
+  .primary-btn();
+}
+
+.primary {
   .transition;
   &:hover {
     color: @brand-secondary!important;
     text-decoration: none!important;
   }
 }
-.secondary-color {
+
+.primary-btn {
   .transition;
   &:hover {
-    color: @brand-secondary-dark!important;
+    background-color: @brand-primary-dark!important;
+  }
+}
+
+.secondary {
+  .transition;
+  &:hover {
+    color: #fff!important;
     text-decoration: none!important;
   }
 }
+
 .primary-background {
   .transition;
   &:hover {
     background: @brand-primary-dark!important;
   }
 }
+
 .secondary-background {
   .transition(1s);
   &:hover {
