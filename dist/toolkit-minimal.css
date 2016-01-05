@@ -203,6 +203,51 @@ div > .nav-caption {
     margin: 26px 80px 40px 80px;
   }
 }
+/* CSS Transitions      */
+/* .radial-brand {
+  background-image: radial-gradient(at 50% top, rgba(194, 85, 92, 0.6) 0%, rgba(194, 85, 92, 0) 75%), radial-gradient(at right top, #d45564 0%, rgba(212, 85, 100, 0) 57%);
+  background-image: -webkit-radial-gradient(50% top, rgba(194, 85, 92, 0.6) 0%, rgba(194, 85, 92, 0) 75%), -webkit-radial-gradient(right top, #d45564 0%, rgba(212, 85, 100, 0) 57%);
+  background-repeat: no-repeat;
+} */
+a {
+  color: #288feb;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover {
+  color: #3dc7cc !important;
+  text-decoration: none!important;
+}
+.primary-color {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.primary-color:hover {
+  color: #48f0de !important;
+  text-decoration: none!important;
+}
+.secondary-color {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.secondary-color:hover {
+  color: #3dc7cc !important;
+  text-decoration: none!important;
+}
+.primary-background {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.primary-background:hover {
+  background: #2884d6 !important;
+}
+.secondary-background {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.secondary-background:hover {
+  background: #3dc7cc !important;
+}
 .vertical-alignment-helper {
   display: table;
   height: 100%;

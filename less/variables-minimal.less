@@ -3,6 +3,59 @@
 // brand
 // @brand-primary:        #685D9F;
 
+// ----------------------/
+/* CSS Transitions      */
+// ----------------------/
+
+// Un-comment this to use a beautiful gradient
+/* .radial-brand {
+  background-image: radial-gradient(at 50% top, rgba(194, 85, 92, 0.6) 0%, rgba(194, 85, 92, 0) 75%), radial-gradient(at right top, #d45564 0%, rgba(212, 85, 100, 0) 57%);
+  background-image: -webkit-radial-gradient(50% top, rgba(194, 85, 92, 0.6) 0%, rgba(194, 85, 92, 0) 75%), -webkit-radial-gradient(right top, #d45564 0%, rgba(212, 85, 100, 0) 57%);
+  background-repeat: no-repeat;
+} */
+
+
+// Un-comment this to enable CSS transitions
+.transition(@transition: .5s) {
+  -o-transition:@transition;
+  -ms-transition:@transition;
+  -moz-transition:@transition;
+  -webkit-transition:@transition;
+  transition:@transition;
+}
+
+// Un-comment to use css transitions when hovering on colors
+a {
+  color: @brand-primary;
+  .secondary-color();
+}
+.primary-color {
+  .transition;
+  &:hover {
+    color: @brand-secondary!important;
+    text-decoration: none!important;
+  }
+}
+.secondary-color {
+  .transition;
+  &:hover {
+    color: @brand-secondary-dark!important;
+    text-decoration: none!important;
+  }
+}
+.primary-background {
+  .transition;
+  &:hover {
+    background: @brand-primary-dark!important;
+  }
+}
+.secondary-background {
+  .transition(1s);
+  &:hover {
+    background: @brand-secondary-dark!important;
+  }
+}
+
 
 // Vertically Center Modal
 
