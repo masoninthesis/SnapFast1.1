@@ -18,6 +18,7 @@
 
       <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
       <link rel="stylesheet" href="dist/toolkit-minimal.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/carlsednaoui/ouibounce/master/test/ouibounce.min.css">
 
 
       <!-- Crazyegg -->
@@ -320,7 +321,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="submodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- <div class="modal fade" id="ouibounce-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="vertical-alignment-helper">
     <div class="modal-dialog vertical-align-center" role="document">
       <div class="modal-content">
@@ -341,13 +342,54 @@
       </div>
     </div>
   </div>
+</div> -->
+
+
+
+<div id="ouibounce-modal">
+  <div class="underlay"></div>
+    <div class="ouibounce-modal">
+    <div class="ouibounce-modal-title">
+      <h3> Modal Title </h3>
+    </div>
+    <div class="ouibounce-modal-body">
+      Modal Body
+    </div>
+    <div class="ouibounce-modal-footer">
+      Modal Footer
+    </div>
+  </div>
 </div>
 
+
     <!-- For some reason jquery should be in the script below, but it's not -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
     </script>
     <!-- /For some reason jquery should be in the script below, but it's not -->
     <script src="dist/toolkit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.11/ouibounce.min.js"></script>
+    <script>
+      // if you want to use the 'fire' or 'disable' fn,
+      // you need to save OuiBounce to an object
+      var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+        aggressive: true,
+        timer: 0,
+        callback: function() { console.log('ouibounce fired!'); }
+      });
+
+      $('body').on('click', function() {
+        $('#ouibounce-modal').hide();
+      });
+
+      $('#ouibounce-modal .modal-footer').on('click', function() {
+        $('#ouibounce-modal').hide();
+      });
+
+      $('#ouibounce-modal .modal').on('click', function(e) {
+        e.stopPropagation();
+      });
+    </script>
+
     <!-- g.analytics -->
 
     <script>
