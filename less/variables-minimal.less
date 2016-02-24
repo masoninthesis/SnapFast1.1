@@ -110,49 +110,60 @@ a {
     pointer-events:all;
 }
 
-.brand-bg {
-    background-color: @brand-primary!important;
-}
 
-#ouibounce-modal .underlay {
-  z-index: -100;
-}
-
-.ouibounce-modal {
-  background-color: white;
-}
-
-#ouibounce-modal h3 {
-    color: @brand-primary!important;
-    font-size: 1em;
-    margin: .2em;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.modal-gfx {
-  margin-top: 46px;
-}
-
-.modal-header {
-  h2 {
-    margin: 40px 0 52px 0;
+#modal {
+  .brand-bg {
+      background-color: @brand-primary!important;
   }
-  ul {
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-bottom: 42px;
 
-    @media (min-width: @screen-xs-min) {
-      width: 50%;
+  #ouibounce-modal .underlay {
+    z-index: -100;
+  }
+
+  .ouibounce-modal {
+    background-color: white;
+  }
+
+  #ouibounce-modal h3 {
+      color: @brand-primary!important;
+      font-size: 1em;
+      margin: .2em;
+      text-transform: uppercase;
+      font-weight: 500;
+  }
+
+  .modal-gfx {
+    margin-top: 46px;
+  }
+
+  .modal-header {
+    h2 {
+      margin: 40px 0 52px 0;
+    }
+    ul {
+      width: 80%;
+      display: block;
+      margin: auto;
+      padding-bottom: 42px;
+      color: white;
+
+      @media (min-width: @screen-xs-min) {
+        width: 50%;
+      }
+    }
+    .modal-fields {
+      width: 86%;
+      margin: auto;
     }
   }
-  .modal-fields {
-    width: 86%;
-    margin: auto;
+  form {
+    padding-bottom: 20px;
+  }
+  a {
+    color: white;
   }
 }
+
 
 // misc typography
 @headings-font-weight: 100;

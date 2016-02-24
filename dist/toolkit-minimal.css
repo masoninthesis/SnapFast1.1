@@ -298,42 +298,49 @@ a:hover {
   margin: 0 auto;
   pointer-events: all;
 }
-.brand-bg {
+#modal .brand-bg {
   background-color: #288feb !important;
 }
-#ouibounce-modal .underlay {
+#modal #ouibounce-modal .underlay {
   z-index: -100;
 }
-.ouibounce-modal {
+#modal .ouibounce-modal {
   background-color: white;
 }
-#ouibounce-modal h3 {
+#modal #ouibounce-modal h3 {
   color: #288feb !important;
   font-size: 1em;
   margin: .2em;
   text-transform: uppercase;
   font-weight: 500;
 }
-.modal-gfx {
+#modal .modal-gfx {
   margin-top: 46px;
 }
-.modal-header h2 {
+#modal .modal-header h2 {
   margin: 40px 0 52px 0;
 }
-.modal-header ul {
+#modal .modal-header ul {
   width: 80%;
   display: block;
   margin: auto;
   padding-bottom: 42px;
+  color: white;
 }
 @media (min-width: 480px) {
-  .modal-header ul {
+  #modal .modal-header ul {
     width: 50%;
   }
 }
-.modal-header .modal-fields {
+#modal .modal-header .modal-fields {
   width: 86%;
   margin: auto;
+}
+#modal form {
+  padding-bottom: 20px;
+}
+#modal a {
+  color: white;
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
