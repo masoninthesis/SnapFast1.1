@@ -86,12 +86,21 @@ a {
     width: 100%;
     pointer-events:none;
 }
+
+.vertical-alignment-helper-1 {
+    display:table;
+    height: 50%;
+    width: 100%;
+    pointer-events:none;
+}
+
 .vertical-align-center {
     /* To center vertically */
     display: table-cell;
     vertical-align: middle;
     pointer-events:none;
 }
+
 .modal-content {
     /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
     width:inherit;
@@ -101,10 +110,49 @@ a {
     pointer-events:all;
 }
 
+.brand-bg {
+    background-color: @brand-primary!important;
+}
+
 #ouibounce-modal .underlay {
   z-index: -100;
 }
 
+.ouibounce-modal {
+  background-color: white;
+}
+
+#ouibounce-modal h3 {
+    color: @brand-primary!important;
+    font-size: 1em;
+    margin: .2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.modal-gfx {
+  margin-top: 46px;
+}
+
+.modal-header {
+  h2 {
+    margin: 40px 0 52px 0;
+  }
+  ul {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-bottom: 42px;
+
+    @media (min-width: @screen-xs-min) {
+      width: 50%;
+    }
+  }
+  .modal-fields {
+    width: 86%;
+    margin: auto;
+  }
+}
 
 // misc typography
 @headings-font-weight: 100;

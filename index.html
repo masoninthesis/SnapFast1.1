@@ -291,7 +291,7 @@
       </div>
 
       <div class="">
-        <button data-target="#submodal" data-toggle="modal" class="btn btn-lg btn-primary footer-btn w-md m-t-md m-b-lg">Start an account</button>
+        <button data-target="#modal" data-toggle="modal" class="btn btn-lg btn-primary footer-btn w-md m-t-md m-b-lg">Start an account</button>
       </div>
 
       <div class="row">
@@ -320,8 +320,8 @@
   </div>
 
 
-<!-- Modal -->
-<!-- <div class="modal fade" id="ouibounce-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- Modals -->
+<div class="modal fade" id="submodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="vertical-alignment-helper">
     <div class="modal-dialog vertical-align-center" role="document">
       <div class="modal-content">
@@ -342,21 +342,38 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 
-
-<div id="ouibounce-modal">
-  <div class="underlay"></div>
-    <div class="ouibounce-modal">
-    <div class="ouibounce-modal-title">
-      <h3> Modal Title </h3>
-    </div>
-    <div class="ouibounce-modal-body">
-      Modal Body
-    </div>
-    <div class="ouibounce-modal-footer">
-      Modal Footer
+<div class="modal" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="vertical-alignment-helper-1">
+    <div class="modal-dialog vertical-align-center" role="document">
+      <div class="modal-content brand-bg">
+        <div class="modal-header">
+          <center><img class="m-b modal-gfx" height="82px" src="dist/img/startup-18.svg"></center>
+          <h2 style="color:white;text-align:center;">Free Speed Analysis</h2>
+          <ul>
+            <li>Pinpoint speed bottlenecks</li>
+            <li>Detailed report with action items</li>
+            <li>1hr call with Magento speed expert to go over the results and answer any questions</li>
+            <li>Free!</li>
+          </ul>
+          <div class="modal-fields">
+            <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+        onload="if(submitted) {window.location='https://www.snapfast.com/hosting/thanks.html';}"></iframe> -->
+              <form action="" method="post" id="ss-form" target="hidden_iframe"
+        onsubmit="submitted=true;">
+              <fieldset class="form-group">
+                <input type="text" name="entry.1510303287" class="form-control ss-q-short" id="entry_1510303287" dir="auto" placeholder="Email address..">
+              </fieldset>
+              <input type="submit" name="Free Preview" id="ss-submit" class="btn btn-lg btn-success hero-btn jfk-button jfk-button-action">
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <center><img class="logo-header" alt="snapfast full logo" src="./dist/svg/logo-modal.svg" height="32" style="margin:18px 0;"></center>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -371,21 +388,21 @@
     <script>
       // if you want to use the 'fire' or 'disable' fn,
       // you need to save OuiBounce to an object
-      var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+      var _ouibounce = ouibounce(document.getElementById('modal'), {
         aggressive: true,
         timer: 0,
         callback: function() { console.log('ouibounce fired!'); }
       });
 
       $('body').on('click', function() {
-        $('#ouibounce-modal').hide();
+        $('#modal').hide();
       });
 
-      $('#ouibounce-modal .modal-footer').on('click', function() {
-        $('#ouibounce-modal').hide();
+      $('#modal .modal-footer').on('click', function() {
+        $('#modal').hide();
       });
 
-      $('#ouibounce-modal .modal').on('click', function(e) {
+      $('#modal .modal').on('click', function(e) {
         e.stopPropagation();
       });
     </script>
