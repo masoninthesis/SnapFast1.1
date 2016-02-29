@@ -202,7 +202,7 @@
                 <button type="submit" class="btn btn-lg btn-success hero-btn form-btn">Speed Me Up!</button>
               </div>
             </form>
-            <center><a href="" type="text" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">no thanks</span></a></center>
+            <center><span style="color: white; cursor: pointer;" type="text" class="close" data-dismiss="modal" aria-label="Close">no thanks</span></center>
           </div>
         </div>
         <div class="modal-footer">
@@ -229,9 +229,9 @@
         callback: function() { console.log('ouibounce fired!'); }
       });
 
-      // $('body').on('click', function() {
-      //   $('#modal').hide();
-      // });
+      $('body').on('click', function() {
+        $('#modal').hide();
+      });
 
       $('#modal .modal-footer').on('click', function() {
         $('#modal').hide();
@@ -241,6 +241,9 @@
         e.stopPropagation();
       });
     </script>
+
+
+
 
     <!-- MAGIC FORMS SCRIPT -->
     <script>
