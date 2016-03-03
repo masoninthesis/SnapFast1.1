@@ -321,7 +321,7 @@
 
 
 <!-- Modals -->
-<div class="modal fade" id="submodal" tabindex="-1" role="dialog" aria-labelledby="submodalLabel">
+<!-- <div class="modal fade" id="submodal" tabindex="-1" role="dialog" aria-labelledby="submodalLabel">
   <div class="vertical-alignment-helper">
     <div class="modal-dialog vertical-align-center" role="document">
       <div class="modal-content">
@@ -342,7 +342,26 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
 
 
 <div class="modal" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
@@ -367,7 +386,7 @@
                 <button type="submit" class="btn btn-lg btn-success hero-btn form-btn">Speed Me Up!</button>
               </div>
             </form>
-            <center><span style="color: white; cursor: pointer;" type="text" class="close" data-dismiss="modal" aria-label="Close">no thanks</span></center>
+            <center><a href="https://www.snapfast.com/hosting/speed-analysis.html" type="text" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">no thanks</span></a></center>
           </div>
         </div>
         <div class="modal-footer">
@@ -394,9 +413,9 @@
         callback: function() { console.log('ouibounce fired!'); }
       });
 
-      $('body').on('click', function() {
-        $('#modal').hide();
-      });
+      // $('body').on('click', function() {
+      //   $('#modal').hide();
+      // });
 
       $('#modal .modal-footer').on('click', function() {
         $('#modal').hide();
